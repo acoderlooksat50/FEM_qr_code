@@ -1,0 +1,80 @@
+:root{
+    --clr-white:hsl(0, 0%, 100%);
+    --clr-light_gray:hsl(212, 45%, 89%);
+    --clr-gray_blue:hsl(220, 15%, 55%);
+    --clr-dark_blue:hsl(218, 44%, 22%);
+    
+    --ff-regular: "Outfit", sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+/*---------------------Global resets---------------------*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--clr-light_gray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*-------------General Styling------------------*/
+.card{
+    margin: 0 auto;
+    background-color: var(--clr-white);
+    max-width: 360px;
+    padding: 15px;
+    border-radius: 18px;
+    margin: 0 1em;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card-content{
+    font-family: var(--ff-regular);
+}
+
+.card-title{
+    font-weight: var(--fw-bold);
+    font-size: 22px;
+    color: var(--clr-dark_blue);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.card-paragraph{
+    font-weight: var(--fw-regular);
+    font-size: 15px;
+    color: var(--clr-gray_blue);
+    padding-bottom: 10px;
+    text-align: center;
+}
